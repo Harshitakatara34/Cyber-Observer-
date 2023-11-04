@@ -1,0 +1,117 @@
+/* NavMid.css */
+.nav-mid-container {
+    position: relative;
+    background-color: #000033;
+  }
+  
+  .nav-mid-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  
+  .nav-mid-heading {
+    margin: 0;
+    height: 100px;
+    padding: 0;
+    position: sticky;
+    z-index: 100;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .nav-mid-paragraph {
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 0;
+  }
+  
+  .nav-mid-buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 70%;
+    margin-top: 60px;
+    
+  }
+  .nav-mid-button{
+    background-color: yellow;
+    border-radius: 15px;
+    width:200px;
+  }
+  
+  /* Animation for bubbles */
+  @keyframes float {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .bubble {
+    position: absolute;
+    background-color:#000033;
+    width: 900px;
+    height: 800px;
+    border-radius: 20%;
+    animation: float 3s alternate infinite;
+  }
+  
+  .bubble:nth-child(1) {
+    top: 20px;
+    right: 100px;
+  }
+  
+  .bubble:nth-child(2) {
+    top: 150px;
+    right: 80px;
+  }
+  
+  .bubble:nth-child(3) {
+    top: 300px;
+    right: 120px;
+  }
+  /* Add more .bubble classes to create more bubbles at different positions */
+  .bubble-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .bubble1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-left: 860px;
+    margin-top: 250px;
+  }
+  .bubble2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:aqua;
+    margin-left: 900px;
+  
+  }
+  .bubble3 {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient( aqua 60%, #1A3458);
+    margin-left: 1000px;
+  }
