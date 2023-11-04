@@ -17,12 +17,13 @@ const NavTop = () => {
       backgroundColor="#000033"
       color={"#FBFBFB"}
       style={{
-        margin: 0,
-        height: "100px",
-        padding: 0,
-        position: "sticky",
-        zIndex: "100",
-      }}
+    margin: 0,
+    height: "100px",
+    padding: 0,
+    position: "sticky",
+    top: 0, // Specify the top position for the sticky element
+    zIndex: 100,
+  }}
     >
       <Flex justifyContent="space-around" width="100%" marginTop="15px">
         <Image
@@ -54,7 +55,7 @@ const NavTop = () => {
               top="100%"
               left="50%"
               transform="translateX(-50%)"
-              width="120px"
+              width="150px"
               border="1px solid #e2e8f0"
               borderRadius="5px"
               padding="5px 0"
@@ -102,7 +103,7 @@ const NavTop = () => {
               top="100%"
               left="50%"
               transform="translateX(-50%)"
-              width="120px"
+              width="150px"
               border="1px solid #e2e8f0"
               borderRadius="5px"
               padding="5px 0"
@@ -127,7 +128,7 @@ const NavTop = () => {
               top="100%"
               left="50%"
               transform="translateX(-50%)"
-              width="120px"
+              width="150px"
               border="1px solid #e2e8f0"
               borderRadius="5px"
               padding="5px 0"
