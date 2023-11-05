@@ -1,0 +1,25 @@
+.imagebox {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Set the width as needed */
+    background-color:#000033 ;
+    margin-top: 100px;
+  }
+  
+  .image {
+    width: 180px; /* Adjust the width of each image */
+    height: 80px; /* Adjust the height of each image */
+    margin-right: 90px; /* Adjust the margin between images as needed */
+    margin-top: 20px;
+    animation: moveRightToLeft 10s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes moveRightToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Adjust the percentage as needed based on the number of images */
+    }
+  }
+  

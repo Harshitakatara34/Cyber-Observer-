@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Flex, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const NavTop = () => {
   const [menu, setMenu] = useState(null);
@@ -55,15 +56,15 @@ const NavTop = () => {
               top="100%"
               left="50%"
               transform="translateX(-50%)"
-              width="150px"
+              width="160px"
               border="1px solid #e2e8f0"
               borderRadius="5px"
               padding="5px 0"
               zIndex="1"
             >
-              <p style={{ color: "#000", padding: "5px" }}>
+             <Link to="use-case"><p style={{ color: "#000", padding: "5px" }}>
                 Risk Exposure Reduction
-              </p>
+              </p></Link> 
               <p style={{ color: "#000", padding: "5px" }}>Cloud Security</p>
               <p style={{ color: "#000", padding: "5px" }}>
                 Active Directory Security
@@ -147,7 +148,7 @@ const NavTop = () => {
             textDecorationColor: "yellow",
           }}
         >
-          <p
+        <Link to="book-a-demo"> <p
             style={{
               backgroundColor: "yellow",
               color: "black",
@@ -159,7 +160,8 @@ const NavTop = () => {
             }}
           >
             Book a Demo
-          </p>
+          </p></Link>
+         
         </Box>
       </Flex>
     </Box>

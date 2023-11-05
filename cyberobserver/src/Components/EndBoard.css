@@ -1,0 +1,19 @@
+.image-container {
+    overflow: hidden;
+    width: 100%; /* Set the width as needed */
+    height: 400px;
+  }
+  
+  .image-wrapper {
+    animation: moveDownToTop 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes moveDownToTop {
+    0% {
+      transform: translateY(100%); /* Adjust the percentage as needed based on the container height and image height */
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
